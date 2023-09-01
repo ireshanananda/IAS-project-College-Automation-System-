@@ -1,0 +1,111 @@
+.popup-wrap {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    content: "";
+    background: rgba(0, 0, 0, 0.85);
+  }
+
+
+  .popup-btn{
+      cursor: pointer;
+
+  }
+  .popup-btn:hover{
+      -webkit-transform:  scale(1.1);
+      transform: scale(1.1);
+      transform-origin:50% 50%;
+      transform-box: fill-box;
+
+  }
+  .popup-btn:hover .Rectangle{
+
+      fill: rgb(137, 248, 152);
+
+  }
+  .popup-box {
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: scroll;
+    padding: 70px;
+    transform: translate(-50%, -50%) scale(0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    background: #fff;
+    text-align: center;
+  }
+  .popup-box h2 {
+    color: #1a1a1a;
+  }
+  .popup-box p {
+      text-align:left ;
+    color: #888;
+  }
+  .popup-box .close-btn {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    border-radius: 1000px;
+    background: #d75f70;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    line-height: 190%;
+  }
+  .popup-box .close-btn:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  ul{
+      text-align: left;
+  }
+   /* unvisited link */
+
+
+  .transform-in, .transform-out {
+    display: block;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+
+  .transform-in {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .transform-out {
+    -webkit-transform: translate(-50%, -50%) scale(0.5);
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+
+
+  @media screen and (max-width: 800px) {
+
+    .popup-box {
+      width: 100vw;
+      height: 100vh;
+      overflow: scroll;
+      padding: 70px;
+      transform: translate(0%, 0%);
+      position: fixed;
+      top: 0;
+      left: 0;
+      box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
+      border-radius: 3px;
+      background: #fff;
+      text-align: center;
+    }
+
+
+  }
